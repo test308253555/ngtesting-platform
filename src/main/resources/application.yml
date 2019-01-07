@@ -73,7 +73,7 @@ mail:
     password: 308253zQq555
 
 sys:
-  name: ngtesting
+  name: zhugetesting
   work:
     dir: /work/ngtesting-data/
     my-mind-test: /Users/aaron/dev/project

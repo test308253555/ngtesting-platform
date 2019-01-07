@@ -15,7 +15,7 @@
  	</div>
  	<br />
  	<div>
- 		您已成功注册ngtesting.com账号，请访问 <a href="${url}/${vcode}">${url}/${vcode}</a>。
+ 		您已成功注册zhugetesting.com账号，请访问 <a href="${url}/${vcode}">${url}/${vcode}</a>。
  	</div>
  </body>
  </html>

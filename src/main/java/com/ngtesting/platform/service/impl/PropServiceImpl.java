@@ -42,7 +42,7 @@ public class PropServiceImpl implements PropService {
     public SimpleMailMessage simpleMailMessage() {
         SimpleMailMessage mailMessage = new SimpleMailMessage();
         mailMessage.setFrom(mailUserName);
-        mailMessage.setSubject("来自ngtesting.com的邮件");
+        mailMessage.setSubject("来自zhugetesting.com的邮件");
         return mailMessage;
     }
 
