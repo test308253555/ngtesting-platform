@@ -1,3 +1,8 @@
+server:
+  servlet:
+    context-path: /testing
+  port: 7017
+
 spring:
     profiles:
       active: prod
@@ -45,6 +50,7 @@ spring:
       multipart:
         max-file-size: 150MB
         max-request-size: 150MB
+
 
 mybatis:
   mapperLocations: classpath:mapper/*.xml

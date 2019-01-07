@@ -17,6 +17,7 @@ import javax.annotation.PostConstruct;
 public class AppLaunch {
     Logger logger = LoggerFactory.getLogger(AppLaunch.class);
 
+
 	public static void main(String[] args) {
 		SpringApplication.run(AppLaunch.class, args);
 	}
