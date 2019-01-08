@@ -237,7 +237,7 @@
                 </executions>
             </plugin>
 
-            <plugin>
+            <!--<plugin>
                 <artifactId>maven-antrun-plugin</artifactId>
                 <executions>
                     <execution>
@@ -348,7 +348,7 @@
                         </resource>
                     </resources>
                 </configuration>
-            </plugin>
+            </plugin>-->
 
         </plugins>
     </build>
