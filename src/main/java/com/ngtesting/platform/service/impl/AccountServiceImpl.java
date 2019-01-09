@@ -36,6 +36,10 @@ public class AccountServiceImpl implements AccountService {
     @Autowired
     private MailService mailService;
 
+    /**
+     * @param user
+     * @return
+     */
     @Transactional
     @Override
     public TstUser register(TstUser user) {
@@ -45,7 +49,7 @@ public class AccountServiceImpl implements AccountService {
         }
 
         String salt = PasswordEncoder.genSalt();
-        PasswordEncoder passwordEncoder = new  PasswordEncoder(salt);
+        PasswordEncoder passwordEncoder = new PasswordEncoder(salt);
 
         user.setTemp(salt);
         user.setPassword(passwordEncoder.encodePassword(user.getPassword()));
@@ -107,7 +111,7 @@ public class AccountServiceImpl implements AccountService {
         String salt = userDao.getSalt(user.getId());
         String passwdInDb = user.getPassword();
 
-        PasswordEncoder passwordEncoder = new  PasswordEncoder(salt);
+        PasswordEncoder passwordEncoder = new PasswordEncoder(salt);
         Boolean pass = passwordEncoder.checkPassword(passwdInDb, password);
         if (!pass) {
             return null;
@@ -167,7 +171,7 @@ public class AccountServiceImpl implements AccountService {
     public Boolean beforResetPassword(String verifyCode) {
         TstUserVerifyCode code = verifyCodeDao.getByCode(verifyCode);
 
-       return code != null;
+        return code != null;
     }
 
     @Override

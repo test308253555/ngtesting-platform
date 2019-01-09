@@ -1,6 +1,6 @@
 server:
   servlet:
-    context-path: /testing
+#    context-path: /testing
   port: 7017
 
 spring:
@@ -8,7 +8,7 @@ spring:
       active: prod
     aop:
       auto: true # Add @EnableAspectJAutoProxy
-      proxy-target-class: false # Whether subclass-based (CGLIB) proxies are to be created (true) as opposed to standard Java interface-based proxies (false)
+      proxy-target-class: true # Whether subclass-based (CGLIB) proxies are to be created (true) as opposed to standard Java interface-based proxies (false)
     resources:
       static-locations: classpath:/META-INF/resources/,classpath:/resources/, classpath:/static/, classpath:/public/, file:${sys.work.dir}, file:${sys.work.my-mind-test}
     freemarker:

@@ -19,6 +19,7 @@ public class Constant {
     // 跨域白名单
     public static final List<String> CLIENT_URL_LIST = Arrays.asList(
             "http://localhost:8080",
+            "http://localhost:7017",
             "http://60.205.244.140:7017",
             "http://ares.zhuge.test",
             "ws://ares.zhuge.test",
@@ -65,6 +66,7 @@ public class Constant {
             this.code = code;
             this.msg = msg;
         }
+
 
         public String code;
         public String msg;
