@@ -75,13 +75,13 @@ mail:
     starttls:
     enable: false
     encoding: UTF-8
-    username: 1225959140@qq.com
-    password: 308253zQq555
+    username: qa-report@zhuge.com
+    password: 111111Aa
 
 sys:
   name: zhugetesting
   work:
-    dir: /work/ngtesting-data/
+    dir: /data/server/ftp/zhugetesting-data
     my-mind-test: /Users/aaron/dev/project
   url:
     login: http://{0}#/login
